@@ -1,0 +1,93 @@
+@import url("https://bermuda-css.netlify.app/style.css");
+@import url("./stylesheets/abstracts/colors.css");
+@import url("./stylesheets/utils/utility.css");
+
+body {
+  background-color: var(--defalult-bg-color);
+  box-sizing: border-box;
+  color: var(--default-text-color);
+}
+.root {
+  height: 100vh;
+  margin: auto;
+  width: 100vw;
+}
+/* content component */
+.content {
+  margin: auto;
+  position: relative;
+  width: 100%;
+}
+/* header comonent styling */
+.header-container {
+  background-color: var(--off-white);
+  position: sticky;
+  top: 0;
+  z-index: var(--z-index-ten);
+}
+/* Navbar styling */
+.header__nav {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  padding: 0 var(--scale-md);
+}
+
+/* Nav Links Styling */
+.nav__links {
+  display: flex;
+}
+.nav__links li a {
+  color: var(--default-text-color);
+}
+.nav__links li a:hover {
+  border-bottom: 2px solid var(--primary-color);
+  box-sizing: border-box;
+  color: var(--primary-color);
+}
+.nav__logo-container * {
+  display: inline-block;
+}
+.nav__logo-container a .fa-store {
+  font-size: var(--scale-xl);
+}
+
+a .fa-store:hover {
+  transform: scale(1);
+}
+
+/* Nav Searchbar styling */
+.nav__searchbar {
+  align-items: center;
+  display: flex;
+  position: relative;
+}
+.nav__searchbar .search-input__btn {
+  position: absolute;
+  right: var(--scale-md);
+}
+
+.search-input {
+  border: 1px solid var(--secondary-color);
+  outline: 1px solid transparent;
+  padding: var(--scale-sm);
+  width: 20rem;
+}
+
+/* Nav Icons styling */
+.nav__icons {
+  align-items: center;
+  display: flex;
+  margin-left: auto;
+}
+.badge__container:hover {
+  transform: scale(1.03);
+}
+.badge {
+  padding: 4px;
+}
+
+.nav__icons-login a {
+  color: var(--primary-color);
+}
