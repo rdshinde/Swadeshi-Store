@@ -91,3 +91,35 @@ a .fa-store:hover {
 .nav__icons-login a {
   color: var(--primary-color);
 }
+
+/* Hero Styling */
+.hero {
+  align-items: center;
+  background-image: linear-gradient(
+    150deg,
+    var(--primary-color),
+    var(--off-white),
+    var(--defalult-bg-color),
+    var(--default-color) /* var(--off-white), */ /* var(--defalult-bg-color) */
+  );
+  margin: var(--scale-lg) auto;
+  width: 95%;
+}
+.hero__btn {
+  font-size: var(--scale-lg);
+  padding: var(--scale-md) var(--scale-lg);
+}
+
+/* Offers cards styling*/
+.offers-container {
+  width: 97%;
+  margin: var(--scale-lg) auto;
+}
+.card {
+  margin: 0;
+}
+
+/* Footer container Styling */
+.footer__links {
+  font-size: var(--scale-lg);
+}
