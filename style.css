@@ -20,9 +20,10 @@ body {
 }
 /* header comonent styling */
 .header-container {
+  background-color: var(--off-white);
   position: sticky;
   top: 0;
-  z-index: 999;
+  z-index: var(--z-index-ten);
 }
 /* Navbar styling */
 .header__nav {
@@ -45,12 +46,13 @@ body {
   box-sizing: border-box;
   color: var(--primary-color);
 }
-
-/* Stling for nav__logo text */
-a h1,
-a h4 {
+.nav__logo-container * {
   display: inline-block;
 }
+.nav__logo-container a .fa-store {
+  font-size: var(--scale-xl);
+}
+
 a .fa-store:hover {
   transform: scale(1);
 }
@@ -77,14 +79,15 @@ a .fa-store:hover {
 .nav__icons {
   align-items: center;
   display: flex;
+  margin-left: auto;
 }
-
+.badge__container:hover {
+  transform: scale(1.03);
+}
 .badge {
   padding: 4px;
 }
-.nav__icons {
-  margin-left: auto;
-}
+
 .nav__icons-login a {
   color: var(--primary-color);
 }
