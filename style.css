@@ -23,7 +23,7 @@ body {
   background-color: var(--off-white);
   position: sticky;
   top: 0;
-  z-index: var(--z-index-ten);
+  z-index: 10;
 }
 /* Navbar styling */
 .header__nav {
@@ -49,18 +49,22 @@ body {
 .nav__logo-container * {
   display: inline-block;
 }
+.nav__logo-container {
+  flex-grow: 1;
+}
 .nav__logo-container a .fa-store {
   font-size: var(--scale-xl);
 }
-
+/* Store Icon */
 a .fa-store:hover {
-  transform: scale(1);
+  transform: scale(1); /* To avoid default scaling of icon*/
 }
 
 /* Nav Searchbar styling */
 .nav__searchbar {
   align-items: center;
   display: flex;
+  flex-grow: 2;
   position: relative;
 }
 .nav__searchbar .search-input__btn {
@@ -72,7 +76,7 @@ a .fa-store:hover {
   border: 1px solid var(--secondary-color);
   outline: 1px solid transparent;
   padding: var(--scale-sm);
-  width: 20rem;
+  width: 100%;
 }
 
 /* Nav Icons styling */
@@ -100,23 +104,57 @@ a .fa-store:hover {
     var(--primary-color),
     var(--off-white),
     var(--defalult-bg-color),
-    var(--default-color) /* var(--off-white), */ /* var(--defalult-bg-color) */
+    var(--default-color)
   );
   margin: var(--scale-lg) auto;
-  width: 95%;
+  width: 90%;
 }
 .hero__btn {
   font-size: var(--scale-lg);
   padding: var(--scale-md) var(--scale-lg);
 }
-
-/* Offers cards styling*/
-.offers-container {
-  width: 97%;
-  margin: var(--scale-lg) auto;
+/* Categories */
+.categories {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
-.card {
-  margin: 0;
+.category {
+  aspect-ratio: 1/1;
+  transition: all 0.2s ease-in;
+  width: var(--scale-xxl);
+}
+.category:hover {
+  box-shadow: var(--shadow-color) 0px 5px 15px;
+  transform: scale(1.03);
+}
+
+/* New Arrivals Container Styling */
+.new-arrivals {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.new-arrivals .card {
+  transition: all 0.2s ease-in;
+}
+.new-arrivals .card:hover {
+  transform: scale(1.01);
+  box-shadow: var(--shadow-color) 0px 5px 15px;
+}
+.new-arrivals .card .card__footer {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  padding: var(--scale-sm);
+}
+.new-arrivals .card-with-badge::after {
+  background: var(--warning-color);
+}
+.new-arrivals .card-with-badge::before {
+  background: var(--warning-hover);
 }
 
 /* Footer container Styling */
