@@ -12,7 +12,6 @@ body {
   color: var(--default-text-color);
 }
 .root {
-  height: 100vh;
   margin: auto;
   width: 100vw;
 }
@@ -97,6 +96,95 @@ a .fa-store:hover {
   color: var(--primary-color);
 }
 
+
+/* Aside Container */
+
+.main {
+  display: grid;
+  grid-template-areas: "aside main";
+  grid-template-columns: 0.25fr 0.75fr;
+  width: 100%;
+}
+.aside-wrapper {
+  background-color: var(--off-white);
+  border-right: 2px solid var(--secondary-color);
+  border-top: 2px solid var(--secondary-color);
+  grid-area: aside;
+  height: 100vh;
+  margin: auto;
+  position: fixed;
+  width: 25%;
+  z-index: 9;
+}
+.aside-container {
+  max-height: 85vh;
+  overflow-y: auto;
+}
+.filter-heading,
+.sort-heading {
+  align-items: center;
+  display: flex;
+}
+.filter-heading button,
+.sort-heading button {
+  margin-left: auto;
+}
+.main-wrapper {
+  grid-area: main;
+  margin: auto;
+  width: 100%;
+}
+
+.main-container {
+  width: 95%;
+}
+
+/* Stling for card component and card-container */
+.cards-container {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.cards-container .card {
+  color: var(--default-text-color);
+  max-height: 35rem;
+  max-width: 18rem;
+  transition: all 0.2s ease-in;
+}
+
+.cards-container .card:hover {
+  transform: scale(1.01);
+}
+
+.cards-container .card .card__footer {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.cards-container .card .card__footer .btn {
+  width: 100%;
+}
+.rating-simple {
+  background-color: var(--active-color);
+  width: var(--scale-xl);
+}
+
+.card__wishlist {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.card__wishlist {
+  font-size: calc(var(--scale-md) + var(--scale-sm));
+}
+
+.card__wishlist:active {
+  color: var(--warning-color);
+}
 /* Hero Styling */
 .hero {
   align-items: center;

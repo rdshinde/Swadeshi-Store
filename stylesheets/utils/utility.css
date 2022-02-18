@@ -19,3 +19,4 @@ a:hover {
 .selected {
   border: 2px solid var(--active-color);
 }
+
