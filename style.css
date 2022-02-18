@@ -96,7 +96,6 @@ a .fa-store:hover {
   color: var(--primary-color);
 }
 
-
 /* Aside Container */
 
 .main {
@@ -137,6 +136,7 @@ a .fa-store:hover {
 
 .main-container {
   width: 95%;
+  margin: auto;
 }
 
 /* Stling for card component and card-container */
@@ -144,6 +144,7 @@ a .fa-store:hover {
   align-items: center;
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 
 .cards-container .card {
@@ -172,17 +173,20 @@ a .fa-store:hover {
   width: var(--scale-xl);
 }
 
-.card__wishlist {
+.card__wishlist, .card__remove {
   position: absolute;
   right: 0;
   top: 0;
+  z-index: 7;
 }
 
-.card__wishlist {
+.card__wishlist,
+.card__remove {
   font-size: calc(var(--scale-md) + var(--scale-sm));
 }
 
-.card__wishlist:active {
+.card__wishlist:hover,
+.card__remove:hover {
   color: var(--warning-color);
 }
 /* Hero Styling */
