@@ -183,7 +183,7 @@ a .fa-store:hover {
 
 .card__wishlist:active {
   color: var(--warning-color);
-
+}
 /* Hero Styling */
 .hero {
   align-items: center;
@@ -248,4 +248,4 @@ a .fa-store:hover {
 /* Footer container Styling */
 .footer__links {
   font-size: var(--scale-lg);
-
+}
