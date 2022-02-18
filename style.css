@@ -1,10 +1,14 @@
 @import url("https://bermuda-css.netlify.app/style.css");
 @import url("./stylesheets/abstracts/colors.css");
 @import url("./stylesheets/utils/utility.css");
-
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
 body {
   background-color: var(--defalult-bg-color);
-  box-sizing: border-box;
+
   color: var(--default-text-color);
 }
 .root {
@@ -86,9 +90,6 @@ a .fa-store:hover {
 }
 .badge__container:hover {
   transform: scale(1.03);
-}
-.badge {
-  padding: 4px;
 }
 
 .nav__icons-login a {
@@ -248,4 +249,28 @@ a .fa-store:hover {
 /* Footer container Styling */
 .footer__links {
   font-size: var(--scale-lg);
+}
+
+/* Shopping Cart Styling */
+.table__headings {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.heading__product {
+  flex-grow: 1;
+}
+.cart__item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.item__description {
+  flex-grow: 1;
+}
+.final-price__heading {
+  margin-left: auto;
+}
+.complete-order-btn {
+  padding: var(--scale-md);
 }

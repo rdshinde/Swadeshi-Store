@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- FontAwesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="../style.css" />
+    <title>Swadeshi | Products</title>
+  </head>
+  <body>
+    <div class="root">
+      <div class="content">
+        <header class="header-container p-sm shadow-md">
+          <nav class="header__nav">
+            <div class="nav__logo-container">
+              <a href="../index.html" class="text-default">
+                <i class="fa-solid fa-store"></i>&nbsp;
+                <h1>Swadeshi</h1>
+                <span class="bold-lg">.com</span>
+              </a>
+            </div>
+            <ul class="nav__links m-x-md">
+              <li class="m-x-sm p-x-sm">
+                <a class="btn btn-link p-b-lg" href="#">Men</a>
+              </li>
+              <li class="m-x-sm p-x-sm">
+                <a class="btn btn-link p-b-sm" href="#">Women</a>
+              </li>
+              <li class="m-x-sm p-x-sm">
+                <a class="btn btn-link p-b-sm" href="#">Children</a>
+              </li>
+            </ul>
+            <div class="nav__searchbar m-x-sm">
+              <input
+                class="search-input border-rounded-md shadow-sm"
+                placeholder="Search..."
+                type="text"
+                id="text-input"
+              />
+              <i class="fas fa-search search-input__btn"></i>
+            </div>
+            <div class="nav__icons text-center">
+              <div class="nav__icons-cart">
+                <div class="badge__container text-center">
+                  <a href="../templates/cart.html"
+                    ><img
+                      class="badge__container-img"
+                      src="../assets/cart.svg"
+                      alt="Cart-img"
+                    />
+                    <div
+                      class="badge badge-top-right border-rounded-full bg-primary text-offwhite bold-xl"
+                    >
+                      10
+                    </div>
+                    <span class="text-5 text-primary bold-lg center-x"
+                      >Cart</span
+                    ></a
+                  >
+                </div>
+              </div>
+              <div class="nav__icons-cart">
+                <div class="badge__container text-center">
+                  <a href="../templates/wishlist.html"
+                    ><img
+                      class="badge__container-img"
+                      src="../assets/wishlist.svg"
+                      alt="Cart-img"
+                    />
+                    <div
+                      class="badge badge-top-right border-rounded-full bg-primary text-offwhite bold-xl"
+                    >
+                      10
+                    </div>
+                    <span class="text-5 text-primary bold-lg center-x"
+                      >Wishlist</span
+                    ></a
+                  >
+                </div>
+              </div>
+              <div class="nav__icons-cart">
+                <div class="badge__container text-center">
+                  <a href="./cart.html"
+                    ><img
+                      class="badge__container-img"
+                      src="../assets/profile.svg"
+                      alt="Cart-img"
+                    />
+                    <span class="text-5 text-primary bold-lg center-x"
+                      >Profile</span
+                    ></a
+                  >
+                </div>
+              </div>
+            </div>
+          </nav>
+        </header>
+        <div class="main gap-md">
+          <div class="aside-wrapper">
+            <aside class="aside-container p-sm">
+              <section class="aside__section filter-heading m-sm p-sm">
+                <h2 class="bold-lg text-primary text-3">Filters</h2>
+                <button class="btn btn-link">Clear Filters</button>
+              </section>
+              <div class="divider-md"></div>
+              <section class="aside__section price-filter m-sm p-sm">
+                <div class="flex-center sort-heading">
+                  <h3 class="bold-lg text-primary text-4">Sort By</h3>
+                  <button class="btn btn-link">Clear</button>
+                </div>
+                <div class="sort-btns">
+                  <div class="input-group">
+                    <label for="popular">
+                      <input id="popular" name="sort-by" type="radio" />
+                      Popular</label
+                    >
+                  </div>
+                  <div class="input-group">
+                    <label for="low-to-high">
+                      <input id="low-to-high" name="sort-by" type="radio" />
+                      Price Low to High</label
+                    >
+                  </div>
+                  <div class="input-group">
+                    <label for="high-to-low">
+                      <input id="high-to-low" name="sort-by" type="radio" />
+                      Price High to Low
+                    </label>
+                  </div>
+                </div>
+              </section>
+              <section class="aside__section price-filter m-sm p-sm">
+                <div class="flex-center sort-heading">
+                  <h3 class="bold-lg text-primary text-4">Price</h3>
+                  <button class="btn btn-link">Clear</button>
+                </div>
+                <div class="sort-btns">
+                  <div class="input-group">
+                    <label for="popular">
+                      <input id="popular" name="price-sort" type="checkbox" />
+                      Below &nbsp; &#8377;100</label
+                    >
+                  </div>
+                  <div class="input-group">
+                    <label for="low-to-high">
+                      <input
+                        id="low-to-high"
+                        name="price-sort"
+                        type="checkbox"
+                      />
+                      &#8377;100 &nbsp;to&nbsp; &#8377;500</label
+                    >
+                  </div>
+                  <div class="input-group">
+                    <label for="high-to-low">
+                      <input
+                        id="high-to-low"
+                        name="price-sort"
+                        type="checkbox"
+                      />
+                      &#8377;501 &nbsp;to&nbsp; &#8377;1000
+                    </label>
+                  </div>
+                  <div class="input-group">
+                    <label for="high-to-low">
+                      <input
+                        id="high-to-low"
+                        name="price-sort"
+                        type="checkbox"
+                      />
+                      &#8377;1001 &nbsp;to&nbsp; &#8377;5000
+                    </label>
+                  </div>
+                  <div class="input-group">
+                    <label for="high-to-low">
+                      <input
+                        id="high-to-low"
+                        name="price-sort"
+                        type="checkbox"
+                      />
+                      Above &nbsp; &#8377;5000
+                    </label>
+                  </div>
+                </div>
+              </section>
+              <section class="aside__section price-filter m-sm p-sm">
+                <div class="flex-center sort-heading">
+                  <h3 class="bold-lg text-primary text-4">Categories</h3>
+                  <button class="btn btn-link">Clear</button>
+                </div>
+                <div class="sort-btns">
+                  <div class="input-group">
+                    <label for="popular">
+                      <input id="popular" name="category" type="checkbox" />
+                      Men</label
+                    >
+                  </div>
+                  <div class="input-group">
+                    <label for="low-to-high">
+                      <input id="low-to-high" name="category" type="checkbox" />
+                      Women</label
+                    >
+                  </div>
+                  <div class="input-group">
+                    <label for="high-to-low">
+                      <input id="high-to-low" name="category" type="checkbox" />
+                      Children
+                    </label>
+                  </div>
+                </div>
+              </section>
+              <section class="aside__section price-filter m-sm p-sm">
+                <div class="flex-center sort-heading">
+                  <h3 class="bold-lg text-primary text-4">Ratings</h3>
+                  <button class="btn btn-link">Clear</button>
+                </div>
+                <div class="sort-btns">
+                  <div class="input-group">
+                    <label for="popular">
+                      <input id="popular" name="rating" type="radio" />
+                      4 Stars and Above</label
+                    >
+                  </div>
+                  <div class="input-group">
+                    <label for="popular">
+                      <input id="popular" name="rating" type="radio" />
+                      3 Stars and Above</label
+                    >
+                  </div>
+                  <div class="input-group">
+                    <label for="low-to-high">
+                      <input id="low-to-high" name="rating" type="radio" />
+                      2 Stars and Above</label
+                    >
+                  </div>
+                  <div class="input-group">
+                    <label for="high-to-low">
+                      <input id="high-to-low" name="rating" type="radio" />
+                      1 Star and Above
+                    </label>
+                  </div>
+                </div>
+              </section>
+            </aside>
+          </div>
+          <div class="main-wrapper">
+            <main class="main-container p-md">
+              <div class="text-start">
+                <h2 class="text-2 bold-lg text-primary">
+                  Search Result
+                  <span class="text-3 bold-lg">(For 20 items)</span>
+                </h2>
+              </div>
+              <div class="cards-container gap-lg">
+                <!-- Card -->
+                <div
+                  class="card border-rounded-sm shadow-sm cursor-pointer p-x-md"
+                >
+                  <div class="card__wishlist text-secondary p-sm">
+                    <i class="fa-solid fa-heart"></i>
+                  </div>
+                  <div class="card__body m-b-md">
+                    <div class="card__img-container">
+                      <img src="../assets/kurta-sm.png" alt="" />
+                    </div>
+                    <p class="text-3 bold-lg text-start">Mens' Kurta</p>
+
+                    <div class="card-price m-t-sm bold-lg text-4 m-b-sm">
+                      <span class="strike"> &#8377;1499</span>
+                      &nbsp;<span> &#8377;999 </span> &nbsp;<span
+                        class="text-success"
+                        >(33% Off)</span
+                      >
+                    </div>
+                    <div class="rating-simple border-rounded-lg px-lg m-b-sm">
+                      <i class="fa fa-star rated"></i>
+                      <span class="bold-lg">4.5</span>
+                    </div>
+                  </div>
+                  <div class="card__footer text-center gap-sm p-x-md">
+                    <a
+                      href="./templates/products.html"
+                      class="btn btn-default border-rounded-sm"
+                    >
+                      Buy Now
+                    </a>
+                    <a
+                      href="./templates/products.html"
+                      class="btn btn-default-outline border-rounded-sm btn-icon"
+                    >
+                      <span
+                        ><img src="../assets/cart.svg" class="btn__icon" alt=""
+                      /></span>
+                      Add to Cart
+                    </a>
+                  </div>
+                </div>
+                <!-- Card -->
+                <div
+                  class="card border-rounded-sm shadow-sm cursor-pointer p-x-md"
+                >
+                  <div class="card__wishlist text-secondary p-sm">
+                    <i class="fa-solid fa-heart"></i>
+                  </div>
+                  <div class="card__body m-b-md">
+                    <div class="card__img-container">
+                      <img src="../assets/kurta-sm.png" alt="" />
+                    </div>
+                    <p class="text-3 bold-lg text-start">Mens' Kurta</p>
+
+                    <div class="card-price m-t-sm bold-lg text-4 m-b-sm">
+                      <span class="strike"> &#8377;1499</span>
+                      &nbsp;<span> &#8377;999 </span> &nbsp;<span
+                        class="text-success"
+                        >(33% Off)</span
+                      >
+                    </div>
+                    <div class="rating-simple border-rounded-lg px-lg m-b-sm">
+                      <i class="fa fa-star rated"></i>
+                      <span class="bold-lg">4.5</span>
+                    </div>
+                  </div>
+                  <div class="card__footer text-center gap-sm p-x-md">
+                    <a
+                      href="./templates/products.html"
+                      class="btn btn-default border-rounded-sm"
+                    >
+                      Buy Now
+                    </a>
+                    <a
+                      href="./templates/products.html"
+                      class="btn btn-default-outline border-rounded-sm btn-icon"
+                    >
+                      <span
+                        ><img src="../assets/cart.svg" class="btn__icon" alt=""
+                      /></span>
+                      Add to Cart
+                    </a>
+                  </div>
+                </div>
+                <!-- Card -->
+                <div
+                  class="card border-rounded-sm shadow-sm cursor-pointer p-x-md"
+                >
+                  <div class="card__wishlist text-secondary p-sm">
+                    <i class="fa-solid fa-heart"></i>
+                  </div>
+                  <div class="card__body m-b-md">
+                    <div class="card__img-container">
+                      <img src="../assets/kurta-sm.png" alt="" />
+                    </div>
+                    <p class="text-3 bold-lg text-start">Mens' Kurta</p>
+
+                    <div class="card-price m-t-sm bold-lg text-4 m-b-sm">
+                      <span class="strike"> &#8377;1499</span>
+                      &nbsp;<span> &#8377;999 </span> &nbsp;<span
+                        class="text-success"
+                        >(33% Off)</span
+                      >
+                    </div>
+                    <div class="rating-simple border-rounded-lg px-lg m-b-sm">
+                      <i class="fa fa-star rated"></i>
+                      <span class="bold-lg">4.5</span>
+                    </div>
+                  </div>
+                  <div class="card__footer text-center gap-sm p-x-md">
+                    <a
+                      href="./templates/products.html"
+                      class="btn btn-default border-rounded-sm"
+                    >
+                      Buy Now
+                    </a>
+                    <a
+                      href="./templates/products.html"
+                      class="btn btn-default-outline border-rounded-sm btn-icon"
+                    >
+                      <span
+                        ><img src="../assets/cart.svg" class="btn__icon" alt=""
+                      /></span>
+                      Add to Cart
+                    </a>
+                  </div>
+                </div>
+                <!-- Card -->
+                <div
+                  class="card border-rounded-sm shadow-sm cursor-pointer p-x-md"
+                >
+                  <div class="card__wishlist text-secondary p-sm">
+                    <i class="fa-solid fa-heart"></i>
+                  </div>
+                  <div class="card__body m-b-md">
+                    <div class="card__img-container">
+                      <img src="../assets/kurta-sm.png" alt="" />
+                    </div>
+                    <p class="text-3 bold-lg text-start">Mens' Kurta</p>
+
+                    <div class="card-price m-t-sm bold-lg text-4 m-b-sm">
+                      <span class="strike"> &#8377;1499</span>
+                      &nbsp;<span> &#8377;999 </span> &nbsp;<span
+                        class="text-success"
+                        >(33% Off)</span
+                      >
+                    </div>
+                    <div class="rating-simple border-rounded-lg px-lg m-b-sm">
+                      <i class="fa fa-star rated"></i>
+                      <span class="bold-lg">4.5</span>
+                    </div>
+                  </div>
+                  <div class="card__footer text-center gap-sm p-x-md">
+                    <a
+                      href="./templates/products.html"
+                      class="btn btn-default border-rounded-sm"
+                    >
+                      Buy Now
+                    </a>
+                    <a
+                      href="./templates/products.html"
+                      class="btn btn-default-outline border-rounded-sm btn-icon"
+                    >
+                      <span
+                        ><img src="../assets/cart.svg" class="btn__icon" alt=""
+                      /></span>
+                      Add to Cart
+                    </a>
+                  </div>
+                </div>
+                <!-- Card -->
+                <div
+                  class="card border-rounded-sm shadow-sm cursor-pointer p-x-md"
+                >
+                  <div class="card__wishlist text-secondary p-sm">
+                    <i class="fa-solid fa-heart"></i>
+                  </div>
+                  <div class="card__body m-b-md">
+                    <div class="card__img-container">
+                      <img src="../assets/kurta-sm.png" alt="" />
+                    </div>
+                    <p class="text-3 bold-lg text-start">Mens' Kurta</p>
+
+                    <div class="card-price m-t-sm bold-lg text-4 m-b-sm">
+                      <span class="strike"> &#8377;1499</span>
+                      &nbsp;<span> &#8377;999 </span> &nbsp;<span
+                        class="text-success"
+                        >(33% Off)</span
+                      >
+                    </div>
+                    <div class="rating-simple border-rounded-lg px-lg m-b-sm">
+                      <i class="fa fa-star rated"></i>
+                      <span class="bold-lg">4.5</span>
+                    </div>
+                  </div>
+                  <div class="card__footer text-center gap-sm p-x-md">
+                    <a
+                      href="./templates/products.html"
+                      class="btn btn-default border-rounded-sm"
+                    >
+                      Buy Now
+                    </a>
+                    <a
+                      href="./templates/products.html"
+                      class="btn btn-default-outline border-rounded-sm btn-icon"
+                    >
+                      <span
+                        ><img src="../assets/cart.svg" class="btn__icon" alt=""
+                      /></span>
+                      Add to Cart
+                    </a>
+                  </div>
+                </div>
+                <!-- Card -->
+                <div
+                  class="card border-rounded-sm shadow-sm cursor-pointer p-x-md"
+                >
+                  <div class="card__wishlist text-secondary p-sm">
+                    <i class="fa-solid fa-heart"></i>
+                  </div>
+                  <div class="card__body m-b-md">
+                    <div class="card__img-container">
+                      <img src="../assets/kurta-sm.png" alt="" />
+                    </div>
+                    <p class="text-3 bold-lg text-start">Mens' Kurta</p>
+
+                    <div class="card-price m-t-sm bold-lg text-4 m-b-sm">
+                      <span class="strike"> &#8377;1499</span>
+                      &nbsp;<span> &#8377;999 </span> &nbsp;<span
+                        class="text-success"
+                        >(33% Off)</span
+                      >
+                    </div>
+                    <div class="rating-simple border-rounded-lg px-lg m-b-sm">
+                      <i class="fa fa-star rated"></i>
+                      <span class="bold-lg">4.5</span>
+                    </div>
+                  </div>
+                  <div class="card__footer text-center gap-sm p-x-md">
+                    <a
+                      href="./templates/products.html"
+                      class="btn btn-default border-rounded-sm"
+                    >
+                      Buy Now
+                    </a>
+                    <a
+                      href="./templates/products.html"
+                      class="btn btn-default-outline border-rounded-sm btn-icon"
+                    >
+                      <span
+                        ><img src="../assets/cart.svg" class="btn__icon" alt=""
+                      /></span>
+                      Add to Cart
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </main>
+          </div>
+        </div>
+        <footer class="footer-container flex-center">
+          <ul class="footer__links flex-center">
+            <li>
+              <a
+                class="btn"
+                href="https://www.linkedin.com/in/rishikesh-shinde-1211b5192/"
+                ><i class="fab fa-linkedin"></i>
+              </a>
+            </li>
+            <li>
+              <a class="btn" href="https://github.com/rdshinde"
+                ><i class="fab fa-github"></i
+              ></a>
+            </li>
+            <li>
+              <a class="btn" href="https://twitter.com/Rishike16406089"
+                ><i class="fab fa-twitter"></i
+              ></a>
+            </li>
+          </ul>
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>
