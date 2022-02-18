@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- FontAwesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Local Stylesheet -->
+    <link rel="stylesheet" href="../style.css" />
+    <title>Swadeshi</title>
+  </head>
+  <body>
+    <div class="root">
+      <div class="content">
+        <header class="header-container p-sm shadow-md">
+          <nav class="header__nav">
+            <div class="nav__logo-container">
+              <a href="../index.html" class="text-default">
+                <i class="fa-solid fa-store"></i>&nbsp;
+                <h1>Swadeshi</h1>
+                <span class="bold-lg">.com</span>
+              </a>
+            </div>
+            <ul class="nav__links m-x-md">
+              <li class="m-x-sm p-x-sm">
+                <a class="btn btn-link p-b-lg" href="#">Men</a>
+              </li>
+              <li class="m-x-sm p-x-sm">
+                <a class="btn btn-link p-b-sm" href="#">Women</a>
+              </li>
+              <li class="m-x-sm p-x-sm">
+                <a class="btn btn-link p-b-sm" href="#">Children</a>
+              </li>
+            </ul>
+            <div class="nav__searchbar m-x-sm">
+              <input
+                class="search-input border-rounded-md shadow-sm"
+                placeholder="Search..."
+                type="text"
+                id="text-input"
+              />
+              <i class="fas fa-search search-input__btn"></i>
+            </div>
+            <div class="nav__icons text-center">
+              <div class="nav__icons-cart">
+                <div class="badge__container text-center">
+                  <a href="./login.html"
+                    ><img
+                      class="badge__container-img"
+                      src="../assets/cart.svg"
+                      alt="Cart-img"
+                    />
+                    <div
+                      class="badge badge-top-right border-rounded-full bg-primary text-offwhite bold-xl"
+                    >
+                      10
+                    </div>
+                    <span class="text-5 text-primary bold-lg center-x"
+                      >Cart</span
+                    ></a
+                  >
+                </div>
+              </div>
+              <div class="nav__icons-wishlist">
+                <div class="badge__container text-center">
+                  <a href="./login"
+                    ><img
+                      class="badge__container-img"
+                      src="../assets/wishlist.svg"
+                      alt="Cart-img"
+                    />
+                    <div
+                      class="badge badge-top-right border-rounded-full bg-primary text-offwhite bold-xl"
+                    >
+                      5
+                    </div>
+                    <span class="text-5 text-primary bold-lg">Wishlist</span></a
+                  >
+                </div>
+              </div>
+              <div class="nav__icons-login">
+                <a
+                  href="./login.html"
+                  class="btn btn-secondary btn-icon border-rounded-md bg-light"
+                  ><i class="fas fa-user btn__icon"></i>Login</a
+                >
+              </div>
+            </div>
+          </nav>
+        </header>
+        <div class="main-wrapper">
+          <main class="main-container flex-center">
+            <div
+              class="login-container bg-offwhite m-xl p-sm border-rounded-sm shadow-md"
+            >
+              <h2 class="text-center text-primary">Register</h2>
+              <form class="container">
+                <div
+                  class="input-group required success"
+                  success-message="All looks good!"
+                >
+                  <label for="name"> Name </label>
+                  <input type="text" id="name" required />
+                </div>
+                <div
+                  class="input-group required success"
+                  success-message="All looks good!"
+                >
+                  <label for="email"> Email </label>
+                  <input type="text" id="email" required />
+                </div>
+                <div
+                  class="input-group required success"
+                  success-message="All looks good!"
+                >
+                  <label for="mobile"> Mobile No. </label>
+                  <input type="tel" id="mobile" required />
+                </div>
+                <div
+                  class="input-group required error"
+                  error-message="Invalid input entered! Please try again."
+                >
+                  <label for="password"> Create Password </label>
+                  <input type="password" id="password" required />
+                </div>
+                <div
+                  class="input-group required error"
+                  error-message="Invalid input entered! Please try again."
+                >
+                  <label for="confirm-password"> Confirm Password </label>
+                  <input type="password" id="confirm-password" required />
+                </div>
+                <div class="input-group text-center">
+                  <button class="btn btn-default border-rounded-md">
+                    Register
+                  </button>
+                </div>
+                <div class="">
+                  <a href="./login.html" class="btn btn-link"
+                    >Already Registered? &nbsp; Login Here.</a
+                  >
+                </div>
+              </form>
+            </div>
+          </main>
+        </div>
+        <footer class="footer-container flex-center">
+          <ul class="footer__links flex-center">
+            <li>
+              <a
+                class="btn"
+                href="https://www.linkedin.com/in/rishikesh-shinde-1211b5192/"
+                ><i class="fab fa-linkedin"></i>
+              </a>
+            </li>
+            <li>
+              <a class="btn" href="https://github.com/rdshinde"
+                ><i class="fab fa-github"></i
+              ></a>
+            </li>
+            <li>
+              <a class="btn" href="https://twitter.com/Rishike16406089"
+                ><i class="fab fa-twitter"></i
+              ></a>
+            </li>
+          </ul>
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>
