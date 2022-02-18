@@ -4,3 +4,18 @@ a:hover {
 .cursor-pointer {
   cursor: pointer;
 }
+.strike {
+  text-decoration: line-through;
+}
+.color-box {
+  display: inline-block;
+  height: var(--scale-md);
+  width: var(--scale-md);
+  transition: all 0.1s ease-in;
+}
+.color-box:hover {
+  transform: scale(1.02);
+}
+.selected {
+  border: 2px solid var(--active-color);
+}
