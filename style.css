@@ -278,8 +278,3 @@ a .fa-store:hover {
 .complete-order-btn {
   padding: var(--scale-md);
 }
-
-/* Login And Signup container styling */
-.login-container, .signup-container{
-  width: 30rem;
-}
