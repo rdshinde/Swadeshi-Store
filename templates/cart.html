@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- FontAwesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Local Stylesheet -->
+    <link rel="stylesheet" href="../style.css" />
+    <title>Swadeshi</title>
+  </head>
+  <body>
+    <div class="root">
+      <div class="content">
+        <header class="header-container p-sm shadow-md">
+          <nav class="header__nav">
+            <div class="nav__logo-container">
+              <a href="./index.html" class="text-default">
+                <i class="fa-solid fa-store"></i>&nbsp;
+                <h1>Swadeshi</h1>
+                <span class="bold-lg">.com</span>
+              </a>
+            </div>
+            <ul class="nav__links m-x-md">
+              <li class="m-x-sm p-x-sm">
+                <a class="btn btn-link p-b-lg" href="#">Men</a>
+              </li>
+              <li class="m-x-sm p-x-sm">
+                <a class="btn btn-link p-b-sm" href="#">Women</a>
+              </li>
+              <li class="m-x-sm p-x-sm">
+                <a class="btn btn-link p-b-sm" href="#">Children</a>
+              </li>
+            </ul>
+            <div class="nav__searchbar m-x-sm">
+              <input
+                class="search-input border-rounded-md shadow-sm"
+                placeholder="Search..."
+                type="text"
+                id="text-input"
+              />
+              <i class="fas fa-search search-input__btn"></i>
+            </div>
+            <div class="nav__icons text-center">
+              <div class="nav__icons-cart">
+                <div class="badge__container text-center">
+                  <a href="./cart.html"
+                    ><img
+                      class="badge__container-img"
+                      src="../assets/cart.svg"
+                      alt="Cart-img"
+                    />
+                    <div
+                      class="badge badge-top-right border-rounded-full bg-primary text-offwhite bold-xl"
+                    >
+                      10
+                    </div>
+                    <span class="text-5 text-primary bold-lg center-x"
+                      >Cart</span
+                    ></a
+                  >
+                </div>
+              </div>
+              <div class="nav__icons-wishlist">
+                <div class="badge__container text-center">
+                  <a href="./cart.html"
+                    ><img
+                      class="badge__container-img"
+                      src="../assets/wishlist.svg"
+                      alt="Cart-img"
+                    />
+                    <div
+                      class="badge badge-top-right border-rounded-full bg-primary text-offwhite bold-xl"
+                    >
+                      5
+                    </div>
+                    <span class="text-5 text-primary bold-lg">Wishlist</span></a
+                  >
+                </div>
+              </div>
+              <div class="nav__icons-login">
+                <a
+                  href="../index.html"
+                  class="btn btn-secondary btn-icon border-rounded-md bg-light"
+                  ><i class="fas fa-user btn__icon"></i>Logout</a
+                >
+              </div>
+            </div>
+          </nav>
+        </header>
+        <div class="main-wrapper">
+          <main class="main-container">
+            <div class="cart-container m-lg">
+              <div class="cart__heading text-primary m-y-lg">
+                <h2>Shopping Cart</h2>
+              </div>
+              <div class="cart__table">
+                <div class="table__headings">
+                  <p class="heading__product text-3 bold-lg">Products</p>
+                  <p class="heading__count text-3 bold-lg m-x-xl">Count</p>
+                  <p class="heading__cost text-3 bold-lg m-x-xl">Total Cost</p>
+                  <span></span>
+                </div>
+                <!-- Cart Item -->
+                <div class="cart__item m-y-lg">
+                  <div class="item__img">
+                    <img
+                      src="../assets/kurta-removebg-preview.png"
+                      class="img-sm"
+                      alt=""
+                    />
+                  </div>
+                  <div class="item__description m-x-lg">
+                    <p class="text-4 bold-lg p-y-sm">Mens' Kurta</p>
+                    <p class="text-4 bold-lg p-b-sm">Size: Small (30cm)</p>
+                    <p>
+                      <span
+                        class="color-box selected bg-default border-rounded-full cursor-pointer"
+                      ></span>
+                      <span
+                        class="color-box bg-success border-rounded-full cursor-pointer"
+                      ></span>
+                      <span
+                        class="color-box bg-warning border-rounded-full cursor-pointer"
+                      ></span>
+                      <span
+                        class="color-box bg-danger border-rounded-full cursor-pointer"
+                      ></span>
+                    </p>
+                    <p class="p-y-sm text-4 bold-lg">
+                      <span class="strike">&#8377;1499</span>
+                      <span> &#8377;999</span>
+                      <span class="text-success">(33% Off)</span>
+                    </p>
+                    <button class="btn btn-secondary">Save For Later</button>
+                  </div>
+                  <div class="item__count flex-center m-x-xl">
+                    <div
+                      class="count__delete bg-secondary p-sm border-rounded-sm"
+                    >
+                      <i class="fa-solid fa-minus"></i>
+                    </div>
+                    <div class="count p-sm text-4 bold-lg">5</div>
+                    <div class="count__add bg-secondary p-sm border-rounded-sm">
+                      <i class="fa-solid fa-plus"></i>
+                    </div>
+                  </div>
+                  <div class="item__price text-4 bold-lg m-x-xxl">
+                    &#8377;999
+                  </div>
+                  <div class="item__delete flex-center m-x-sm">
+                    <i class="fa-solid fa-circle-xmark"></i>
+                  </div>
+                </div>
+                <div class="divider"></div>
+                <!-- First Cart Item ends here -->
+                <!-- Cart Item -->
+                <div class="cart__item m-y-lg">
+                  <div class="item__img">
+                    <img
+                      src="../assets/kurta-removebg-preview.png"
+                      class="img-sm"
+                      alt=""
+                    />
+                  </div>
+                  <div class="item__description m-x-lg">
+                    <p class="text-4 bold-lg p-y-sm">Mens' Kurta</p>
+                    <p class="text-4 bold-lg p-b-sm">Size: Small (30cm)</p>
+                    <p>
+                      <span
+                        class="color-box selected bg-default border-rounded-full cursor-pointer"
+                      ></span>
+                      <span
+                        class="color-box bg-success border-rounded-full cursor-pointer"
+                      ></span>
+                      <span
+                        class="color-box bg-warning border-rounded-full cursor-pointer"
+                      ></span>
+                      <span
+                        class="color-box bg-danger border-rounded-full cursor-pointer"
+                      ></span>
+                    </p>
+                    <p class="p-y-sm text-4 bold-lg">
+                      <span class="strike">&#8377;1499</span>
+                      <span> &#8377;999</span>
+                      <span class="text-success">(33% Off)</span>
+                    </p>
+                    <button class="btn btn-secondary">Save For Later</button>
+                  </div>
+                  <div class="item__count flex-center m-x-xl">
+                    <div
+                      class="count__delete bg-secondary p-sm border-rounded-sm"
+                    >
+                      <i class="fa-solid fa-minus"></i>
+                    </div>
+                    <div class="count p-sm text-4 bold-lg">5</div>
+                    <div class="count__add bg-secondary p-sm border-rounded-sm">
+                      <i class="fa-solid fa-plus"></i>
+                    </div>
+                  </div>
+                  <div class="item__price text-4 bold-lg m-x-xxl">
+                    &#8377;999
+                  </div>
+                  <div class="item__delete flex-center m-x-sm">
+                    <i class="fa-solid fa-circle-xmark"></i>
+                  </div>
+                </div>
+                <div class="divider"></div>
+                <!-- Second Cart Item ends here -->
+              </div>
+              <div class="final-price flex-center m-y-lg">
+                <div class="final-price__heading text-primary flex-center">
+                  <h2>Total Amout: &nbsp;<span>&#8377;1998</span></h2>
+                  <button
+                    class="btn btn-default complete-order-btn m-l-lg border-rounded-lg"
+                  >
+                    Complete Order
+                  </button>
+                </div>
+              </div>
+              <div class="saved-for-later">
+                <h3>Saved For Later</h3>
+                <!-- Cart Item -->
+                <div class="cart__item m-y-lg">
+                  <div class="item__img">
+                    <img
+                      src="../assets/kurta-removebg-preview.png"
+                      class="img-sm"
+                      alt=""
+                    />
+                  </div>
+                  <div class="item__description m-x-lg">
+                    <p class="text-4 bold-lg p-y-sm">Mens' Kurta</p>
+                    <p class="text-4 bold-lg p-b-sm">Size: Small (30cm)</p>
+                    <p>
+                      <span
+                        class="color-box selected bg-default border-rounded-full cursor-pointer"
+                      ></span>
+                      <span
+                        class="color-box bg-success border-rounded-full cursor-pointer"
+                      ></span>
+                      <span
+                        class="color-box bg-warning border-rounded-full cursor-pointer"
+                      ></span>
+                      <span
+                        class="color-box bg-danger border-rounded-full cursor-pointer"
+                      ></span>
+                    </p>
+                    <p class="p-y-sm text-4 bold-lg">
+                      <span class="strike">&#8377;1499</span>
+                      <span> &#8377;999</span>
+                      <span class="text-success">(33% Off)</span>
+                    </p>
+                    <button class="btn btn-secondary">Move to Cart</button>
+                  </div>
+                  <div class="item__count flex-center m-x-xl">
+                    <div
+                      class="count__delete bg-secondary p-sm border-rounded-sm"
+                    >
+                      <i class="fa-solid fa-minus"></i>
+                    </div>
+                    <div class="count p-sm text-4 bold-lg">5</div>
+                    <div class="count__add bg-secondary p-sm border-rounded-sm">
+                      <i class="fa-solid fa-plus"></i>
+                    </div>
+                  </div>
+                  <div class="item__price text-4 bold-lg m-x-xxl">
+                    &#8377;999
+                  </div>
+                  <div class="item__delete flex-center m-x-sm">
+                    <i class="fa-solid fa-circle-xmark"></i>
+                  </div>
+                </div>
+                <div class="divider"></div>
+                <!-- Second Cart Item ends here -->
+              </div>
+            </div>
+          </main>
+        </div>
+        <footer class="footer-container flex-center">
+          <ul class="footer__links flex-center">
+            <li>
+              <a
+                class="btn"
+                href="https://www.linkedin.com/in/rishikesh-shinde-1211b5192/"
+                ><i class="fab fa-linkedin"></i>
+              </a>
+            </li>
+            <li>
+              <a class="btn" href="https://github.com/rdshinde"
+                ><i class="fab fa-github"></i
+              ></a>
+            </li>
+            <li>
+              <a class="btn" href="https://twitter.com/Rishike16406089"
+                ><i class="fab fa-twitter"></i
+              ></a>
+            </li>
+          </ul>
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>
