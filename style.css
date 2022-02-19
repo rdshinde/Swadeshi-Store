@@ -1,6 +1,7 @@
 @import url("https://bermuda-css.netlify.app/style.css");
 @import url("./stylesheets/abstracts/colors.css");
 @import url("./stylesheets/utils/utility.css");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css");
 *,
 *::after,
 *::before {
@@ -96,7 +97,6 @@ a .fa-store:hover {
   color: var(--primary-color);
 }
 
-
 /* Aside Container */
 
 .main {
@@ -137,6 +137,7 @@ a .fa-store:hover {
 
 .main-container {
   width: 95%;
+  margin: auto;
 }
 
 /* Stling for card component and card-container */
@@ -151,6 +152,7 @@ a .fa-store:hover {
   max-height: 35rem;
   max-width: 18rem;
   transition: all 0.2s ease-in;
+  margin: var(--scale-md) var(--scale-sm);
 }
 
 .cards-container .card:hover {
@@ -176,6 +178,7 @@ a .fa-store:hover {
   position: absolute;
   right: 0;
   top: 0;
+  z-index: 7;
 }
 
 .card__wishlist {
@@ -212,7 +215,6 @@ a .fa-store:hover {
 .category {
   aspect-ratio: 1/1;
   transition: all 0.2s ease-in;
-  width: var(--scale-xxl);
 }
 .category:hover {
   box-shadow: var(--shadow-color) 0px 5px 15px;
@@ -275,6 +277,7 @@ a .fa-store:hover {
   padding: var(--scale-md);
 }
 
-.signup-container, .login-container{
+.signup-container,
+.login-container {
   width: 30rem;
 }
