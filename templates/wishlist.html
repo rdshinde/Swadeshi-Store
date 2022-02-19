@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- FontAwesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Local Stylesheet -->
+    <link rel="stylesheet" href="../style.css" />
+    <title>Swadeshi | Wishlist</title>
+  </head>
+  <body>
+    <div class="root">
+      <div class="content">
+        <header class="header-container p-sm shadow-md">
+          <nav class="header__nav">
+            <div class="nav__logo-container">
+              <a href="../index.html" class="text-default">
+                <i class="fa-solid fa-store"></i>&nbsp;
+                <h1>Swadeshi</h1>
+                <span class="bold-lg">.com</span>
+              </a>
+            </div>
+            <ul class="nav__links m-x-md">
+              <li class="m-x-sm p-x-sm">
+                <a class="btn btn-link p-b-lg" href="#">Men</a>
+              </li>
+              <li class="m-x-sm p-x-sm">
+                <a class="btn btn-link p-b-sm" href="#">Women</a>
+              </li>
+              <li class="m-x-sm p-x-sm">
+                <a class="btn btn-link p-b-sm" href="#">Children</a>
+              </li>
+            </ul>
+            <div class="nav__searchbar m-x-sm">
+              <input
+                class="search-input border-rounded-md shadow-sm"
+                placeholder="Search..."
+                type="text"
+                id="text-input"
+              />
+              <i class="fas fa-search search-input__btn"></i>
+            </div>
+            <div class="nav__icons text-center">
+              <div class="nav__icons-cart">
+                <div class="badge__container text-center">
+                  <a href="../templates/cart.html"
+                    ><img
+                      class="badge__container-img"
+                      src="../assets/cart.svg"
+                      alt="Cart-img"
+                    />
+                    <div
+                      class="badge badge-top-right border-rounded-full bg-primary text-offwhite bold-xl"
+                    >
+                      10
+                    </div>
+                    <span class="text-5 text-primary bold-lg center-x"
+                      >Cart</span
+                    ></a
+                  >
+                </div>
+              </div>
+              <div class="nav__icons-wishlist">
+                <div class="badge__container text-center">
+                  <a href="../templates/wishlist.html"
+                    ><img
+                      class="badge__container-img"
+                      src="../assets/wishlist.svg"
+                      alt="Cart-img"
+                    />
+                    <div
+                      class="badge badge-top-right border-rounded-full bg-primary text-offwhite bold-xl"
+                    >
+                      5
+                    </div>
+                    <span class="text-5 text-primary bold-lg">Wishlist</span></a
+                  >
+                </div>
+              </div>
+              <div class="nav__icons-login">
+                <a
+                  href="../index.html"
+                  class="btn btn-secondary btn-icon border-rounded-md bg-light"
+                  ><i class="fas fa-user btn__icon"></i>Logout</a
+                >
+              </div>
+            </div>
+          </nav>
+        </header>
+        <div class="main-wrapper">
+          <main class="main-container">
+            <div class="wishlist-heading text-primary text-center p-md">
+              <h2>My Wishlist</h2>
+            </div>
+            <div class="cards-container gap-lg m-y-lg">
+              <!-- Card -->
+              <div
+                class="card border-rounded-sm shadow-sm cursor-pointer p-x-md"
+              >
+                <div class="card__remove text-secondary p-sm m-sm">
+                  <i class="fa-solid fa-trash-can"></i>
+                </div>
+                <div class="card__body m-b-md">
+                  <div class="card__img-container">
+                    <img src="../assets/kurta-sm.png" alt="" />
+                  </div>
+                  <p class="text-3 bold-lg text-start">Mens' Kurta</p>
+
+                  <div class="card-price m-t-sm bold-lg text-4 m-b-sm">
+                    <span class="text-success"> &#8377;999 </span
+                    ><span class="strike"> &#8377;1499</span> &nbsp;<span
+                      class="text-success"
+                      >(33% Off)</span
+                    >
+                  </div>
+                  <div class="rating-simple border-rounded-lg m-b-sm">
+                    <i class="fa fa-star rated"></i>
+                    <span class="bold-lg">4.5</span>
+                  </div>
+                </div>
+                <div class="card__footer text-center gap-sm">
+                  <a
+                    href="./products.html"
+                    class="btn btn-default border-rounded-sm"
+                  >
+                    Buy Now
+                  </a>
+                  <a
+                    href="./products.html"
+                    class="btn btn-default-outline border-rounded-sm btn-icon"
+                  >
+                    <span
+                      ><img src="../assets/cart.svg" class="btn__icon" alt=""
+                    /></span>
+                    Move to Cart
+                  </a>
+                </div>
+              </div>
+              <!-- First Card Ends Here -->
+              <!-- Card -->
+              <div
+                class="card border-rounded-sm shadow-sm cursor-pointer p-x-md"
+              >
+                <div class="card__remove text-secondary p-sm m-sm">
+                  <i class="fa-solid fa-trash-can"></i>
+                </div>
+                <div class="card__body m-b-md">
+                  <div class="card__img-container">
+                    <img src="../assets/kurta-sm.png" alt="" />
+                  </div>
+                  <p class="text-3 bold-lg text-start">Mens' Kurta</p>
+
+                  <div class="card-price m-t-sm bold-lg text-4 m-b-sm">
+                    <span class="text-success"> &#8377;999 </span
+                    ><span class="strike"> &#8377;1499</span> &nbsp;<span
+                      class="text-success"
+                      >(33% Off)</span
+                    >
+                  </div>
+                  <div class="rating-simple border-rounded-lg m-b-sm">
+                    <i class="fa fa-star rated"></i>
+                    <span class="bold-lg">4.5</span>
+                  </div>
+                </div>
+                <div class="card__footer text-center gap-sm">
+                  <a
+                    href="./products.html"
+                    class="btn btn-default border-rounded-sm"
+                  >
+                    Buy Now
+                  </a>
+                  <a
+                    href="./products.html"
+                    class="btn btn-default-outline border-rounded-sm btn-icon"
+                  >
+                    <span
+                      ><img src="../assets/cart.svg" class="btn__icon" alt=""
+                    /></span>
+                    Move to Cart
+                  </a>
+                </div>
+              </div>
+              <!-- First Card Ends Here -->
+              <!-- Card -->
+              <div
+                class="card border-rounded-sm shadow-sm cursor-pointer p-x-md"
+              >
+                <div class="card__remove text-secondary p-sm m-sm">
+                  <i class="fa-solid fa-trash-can"></i>
+                </div>
+                <div class="card__body m-b-md">
+                  <div class="card__img-container">
+                    <img src="../assets/kurta-sm.png" alt="" />
+                  </div>
+                  <p class="text-3 bold-lg text-start">Mens' Kurta</p>
+
+                  <div class="card-price m-t-sm bold-lg text-4 m-b-sm">
+                    <span class="text-success"> &#8377;999 </span
+                    ><span class="strike"> &#8377;1499</span> &nbsp;<span
+                      class="text-success"
+                      >(33% Off)</span
+                    >
+                  </div>
+                  <div class="rating-simple border-rounded-lg m-b-sm">
+                    <i class="fa fa-star rated"></i>
+                    <span class="bold-lg">4.5</span>
+                  </div>
+                </div>
+                <div class="card__footer text-center gap-sm">
+                  <a
+                    href="./products.html"
+                    class="btn btn-default border-rounded-sm"
+                  >
+                    Buy Now
+                  </a>
+                  <a
+                    href="./products.html"
+                    class="btn btn-default-outline border-rounded-sm btn-icon"
+                  >
+                    <span
+                      ><img src="../assets/cart.svg" class="btn__icon" alt=""
+                    /></span>
+                    Move to Cart
+                  </a>
+                </div>
+              </div>
+              <!-- First Card Ends Here -->
+              <!-- Card -->
+              <div
+                class="card border-rounded-sm shadow-sm cursor-pointer p-x-md"
+              >
+                <div class="card__remove text-secondary p-sm m-sm">
+                  <i class="fa-solid fa-trash-can"></i>
+                </div>
+                <div class="card__body m-b-md">
+                  <div class="card__img-container">
+                    <img src="../assets/kurta-sm.png" alt="" />
+                  </div>
+                  <p class="text-3 bold-lg text-start">Mens' Kurta</p>
+
+                  <div class="card-price m-t-sm bold-lg text-4 m-b-sm">
+                    <span class="text-success"> &#8377;999 </span
+                    ><span class="strike"> &#8377;1499</span> &nbsp;<span
+                      class="text-success"
+                      >(33% Off)</span
+                    >
+                  </div>
+                  <div class="rating-simple border-rounded-lg m-b-sm">
+                    <i class="fa fa-star rated"></i>
+                    <span class="bold-lg">4.5</span>
+                  </div>
+                </div>
+                <div class="card__footer text-center gap-sm">
+                  <a
+                    href="./products.html"
+                    class="btn btn-default border-rounded-sm"
+                  >
+                    Buy Now
+                  </a>
+                  <a
+                    href="./products.html"
+                    class="btn btn-default-outline border-rounded-sm btn-icon"
+                  >
+                    <span
+                      ><img src="../assets/cart.svg" class="btn__icon" alt=""
+                    /></span>
+                    Move to Cart
+                  </a>
+                </div>
+              </div>
+              <!-- First Card Ends Here -->
+            </div>
+          </main>
+        </div>
+        <footer class="footer-container flex-center">
+          <ul class="footer__links flex-center">
+            <li>
+              <a
+                class="btn"
+                href="https://www.linkedin.com/in/rishikesh-shinde-1211b5192/"
+                ><i class="fab fa-linkedin"></i>
+              </a>
+            </li>
+            <li>
+              <a class="btn" href="https://github.com/rdshinde"
+                ><i class="fab fa-github"></i
+              ></a>
+            </li>
+            <li>
+              <a class="btn" href="https://twitter.com/Rishike16406089"
+                ><i class="fab fa-twitter"></i
+              ></a>
+            </li>
+          </ul>
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>
